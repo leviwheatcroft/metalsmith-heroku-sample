@@ -1,0 +1,13 @@
+<RoutingRules>
+  {{#each redirects}}
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>{{ this.src }}</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>{{ this.dest }}</ReplaceKeyPrefixWith>
+      <HttpRedirectCode>301</HttpRedirectCode>
+    </Redirect>
+    </RoutingRule>
+  {{/each}}
+</RoutingRules>

@@ -1,0 +1,11 @@
+*.log
+npm-debug.log*
+build
+node_modules
+config/local.js
+.nyc_output
+coverage
+index.js.map
+.node-persist
+.vscode
+.store
